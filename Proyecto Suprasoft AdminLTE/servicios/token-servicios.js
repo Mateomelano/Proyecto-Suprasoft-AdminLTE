@@ -2,6 +2,8 @@ const urlLogin = "https://655133be7d203ab6626ea39e.mockapi.io/users";
 import { get_mail, get_pass } from "../controladores/login-controler.js";
 
 // Función para obtener el token JWT
+
+
 async function getToken() {
   try {
     let email = get_mail();
@@ -25,7 +27,7 @@ async function getToken() {
 
     const data = await response.json(); // Espera correctamente a que la respuesta se convierta en JSON
 
-    console.log(data);
+    
     return data.access_token; // Guarda el token globalmente para usarlo en las solicitudes
   } catch (error) {
     console.error("Error fetching token:", error);

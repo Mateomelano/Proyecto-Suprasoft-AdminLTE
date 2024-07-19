@@ -9,7 +9,7 @@ async function listar(id) {
   if (!token) {
     token=await tokenServices.getToken(); // Obtener el token si no lo tenemos aún
   }
-  console.log(token);
+  
   let cadUrl;
   if (isNaN(id)) 
     cadUrl = url;

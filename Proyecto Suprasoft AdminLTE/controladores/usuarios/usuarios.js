@@ -83,7 +83,7 @@ async function borrar(){
   
         focusDeny: true
       }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
+        
         if (result.isConfirmed) {
            borrar = 1;
         } else if (result.isDenied) {

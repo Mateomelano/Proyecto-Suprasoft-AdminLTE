@@ -49,9 +49,9 @@ async function usuarioExiste() {
                         usuarioActivo = usuario.nombre;
                         letraUsuario = usuario.nombre.charAt(0).toUpperCase();
                         return existeUsuario = true;
-                    } else {
-                        mostrarMensaje('Usuario no autorizado');
-                    }
+                    }// else {
+                     //   mostrarMensaje('Usuario no autorizado');
+                    //}
                 } else {
                     return;
                 }

@@ -21,5 +21,5 @@ export function Router(){
     }else if(( hash==='#/home') || (hash==='') || (hash==='#')){
         Home();
     }
-    console.log (hash);
+    
 }
